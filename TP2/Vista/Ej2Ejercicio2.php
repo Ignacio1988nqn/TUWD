@@ -2,9 +2,10 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta title="TP 1 - Ejercicio 2">
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Formulario - Ejercicio 2</title>
+    <script src="./assets/js/JsJQuery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/JsJQuery/jquery.validate.min.js"></script>
+    <script src="./assets/js/verificacion2_jquery.js"> </script>
 
 </head>
 
@@ -29,23 +30,23 @@
                 </tr>
                 <tr>
                     <td>Lunes</td>
-                    <td><input type="number" name="lunes" id="lunes" required></td>
+                    <td><input type="text" name="lunes" id="lunes"></td>
                 </tr>
                 <tr>
                     <td>Martes</td>
-                    <td><input type="number" name="martes" id="martes" required></td>
+                    <td><input type="text" name="martes" id="martes"></td>
                 </tr>
                 <tr>
                     <td>Miercoles</td>
-                    <td><input type="number" name="miercoles" id="miercoles" required></td>
+                    <td><input type="text" name="miercoles" id="miercoles"></td>
                 </tr>
                 <tr>
                     <td>Jueves</td>
-                    <td><input type="number" name="jueves" id="jueves" required></td>
+                    <td><input type="text" name="jueves" id="jueves"></td>
                 </tr>
                 <tr>
                     <td>Viernes</td>
-                    <td><input type="number" name="viernes" id="viernes" required></td>
+                    <td><input type="text" name="viernes" id="viernes"></td>
                 </tr>
             </table>
             <br>
@@ -54,6 +55,5 @@
             </div>
         </form>
     </div>
-</body>
 
 </html>

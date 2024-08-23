@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario - Ejercicio 1</title>
+    <script src="./assets/js/JsJQuery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/JsJQuery/jquery.validate.min.js"></script>
+    <script src="./assets/js/verificacion1_jquery.js"> </script>
+
 </head>
 
 <body>
@@ -19,7 +23,7 @@
         <form id="form" action="./action/vernumero.php" method="get">
             <div>
                 <label for="number">Ingrese un numero</label>
-                <input type="number" name="numero" id="numero" required>
+                <input type="text" name="numero" id="numero">
             </div>
             <div style="margin-top: 40px;">
                 <button type="submit" style="padding: 20px 40px;background-color: limegreen;margin-left: 130px;border-color: limegreen;color: white;border-radius: 5px;">Enviar</button>

@@ -2,9 +2,10 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta title="TP 1 - Ejercicio 7">
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Formulario - Ejercicio 7</title>
+    <script src="./assets/js/JsJQuery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/JsJQuery/jquery.validate.min.js"></script>
+    <script src="./assets/js/verificacion7_jquery.js"> </script>
 </head>
 
 <body>
@@ -30,11 +31,11 @@
                     </tr>
                     <tr>
                         <td>Número 1</td>
-                        <td><input type="number" name="n1" id="n1" required></td>
+                        <td><input type="text" name="n1" id="n1"></td>
                     </tr>
                     <tr>
                         <td>Número 2</td>
-                        <td><input type="number" name="n2" id="n2" required></td>
+                        <td><input type="text" name="n2" id="n2"></td>
                     </tr>
                 </table>
                 <br>

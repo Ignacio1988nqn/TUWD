@@ -10,10 +10,8 @@
 <body>
     <div id="container" style="margin:50px 300px;">
         <?php
-
         include_once '../../Utils/datosSubmitted.php';
         include_once '../../Control/Tarifa.php';
-
         $datos = darDatosSubmitted();
         if ($datos) {
 
@@ -26,7 +24,7 @@
         }
         ?>
         <br>
-        <a href="../Ejercicio8.php" class="btn btn-primary">Volver al formulario</a>
+        <a href="../Ej2Ejercicio8.php" class="btn btn-primary">Volver al formulario</a>
         <br>
         <br>
         <a href="../../../index.html" class="btn btn-secondary"> Volver al menu principal </a>

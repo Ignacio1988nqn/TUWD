@@ -2,9 +2,10 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta title="TP 1 - Ejercicio 8">
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Formulario - Ejercicio 8</title>
+    <script src="./assets/js/JsJQuery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/JsJQuery/jquery.validate.min.js"></script>
+    <script src="./assets/js/verificacion8_jquery.js"> </script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
         <form id="form" action="./action/vertarifa.php" method="get">
 
             <label for="edad">Edad: </label>
-            <input type="number" name="edad" id="edad" required>
+            <input type="text" name="edad" id="edad">
 
             <p>Estudiante:</p>
             <input type="radio" id="si" name="estudiante" value="si" checked="checked">

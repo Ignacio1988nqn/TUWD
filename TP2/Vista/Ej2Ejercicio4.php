@@ -2,9 +2,10 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta title="TP 1 - Ejercicio 4">
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Formulario - Ejercicio 3</title>
+    <script src="./assets/js/JsJQuery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/JsJQuery/jquery.validate.min.js"></script>
+    <script src="./assets/js/verificacion4_jquery.js"> </script>
 </head>
 
 <body>
@@ -27,19 +28,19 @@
                 </tr>
                 <tr>
                     <td>Nombre</td>
-                    <td><input type="text" name="nombre" id="nombre" required></td>
+                    <td><input type="text" name="nombre" id="nombre" ></td>
                 </tr>
                 <tr>
                     <td>Apellido</td>
-                    <td><input type="text" name="apellido" id="apellido" required></td>
+                    <td><input type="text" name="apellido" id="apellido" ></td>
                 </tr>
                 <tr>
                     <td>Edad</td>
-                    <td><input type="number" name="edad" id="edad" required></td>
+                    <td><input type="text" name="edad" id="edad" ></td>
                 </tr>
                 <tr>
                     <td>Direccion</td>
-                    <td><input type="text" name="direccion" id="direccion" required></td>
+                    <td><input type="text" name="direccion" id="direccion" ></td>
                 </tr>
             </table>
             <br>
