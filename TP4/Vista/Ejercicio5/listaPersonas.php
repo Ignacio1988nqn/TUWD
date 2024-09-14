@@ -1,5 +1,5 @@
 <?php 
-include_once '../../Control/AbmPersona.php';
+require_once "../../configuracion.php";
 $personaControl = new AbmPersona();
 $personas = $personaControl->buscar("");
 $hay = false;

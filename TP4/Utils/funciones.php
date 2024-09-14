@@ -37,6 +37,7 @@ spl_autoload_register(function ($class_name){
       //  $GLOBALS['ROOT'].'util/class/',
     );
     //print_object($directorys) ;
+    
     foreach($directorys as $directory){
         if(file_exists($directory.$class_name . '.php')){
             // echo "se incluyo".$directory.$class_name . '.php';
@@ -44,6 +45,20 @@ spl_autoload_register(function ($class_name){
             return;
         }
     }
+    
+    /* debug por si falla la inclusion
+    foreach($directorys as $directory) {
+        $file = $directory . $class_name . '.php';
+        echo "Buscando en: " . $file . "<br>"; // Depurar la ruta
+        if(file_exists($file)) {
+            echo "Cargando: " . $file . "<br>"; // Confirmar la inclusión
+            require_once($file);
+            return;
+        }
+    }
+    echo "No se encontró la clase " . $class_name . "<br>";
+    */
+
 });
 
 ?>

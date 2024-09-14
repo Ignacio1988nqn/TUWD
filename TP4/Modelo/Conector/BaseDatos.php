@@ -1,4 +1,5 @@
 <?php
+
 class BaseDatos extends PDO {
   
     private $engine;

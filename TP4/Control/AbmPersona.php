@@ -1,7 +1,5 @@
 <?php 
 
-include_once 'C:/XAMPP/htdocs/TUWD/TP4/Modelo/Conector/BaseDatos.php';
-include_once 'C:/XAMPP/htdocs/TUWD/TP4/Modelo/Persona.php';
 class AbmPersona{ 
     
     

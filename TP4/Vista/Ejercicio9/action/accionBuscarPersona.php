@@ -1,7 +1,7 @@
 <?php 
 
-include_once '../../../Control/AbmPersona.php';
-include_once '../../../Utils/funciones.php';
+require_once '../../../configuracion.php';
+
 $datos = darDatosSubmitted(); 
 $objPersona = new AbmPersona();
 

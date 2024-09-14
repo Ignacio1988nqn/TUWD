@@ -1,8 +1,6 @@
 <?php 
 
-include_once '../../../Utils/funciones.php'; 
-include_once '../../../Control/AbmPersona.php';
-include_once '../../../Control/AbmAuto.php';
+require_once '../../../configuracion.php';
 
 $datos = darDatosSubmitted() ; 
 

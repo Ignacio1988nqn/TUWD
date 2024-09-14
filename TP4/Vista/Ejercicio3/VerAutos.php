@@ -1,5 +1,5 @@
 <?php 
-include_once '../../Control/AbmAuto.php';
+require_once "../../configuracion.php";
 $autoControl = new AbmAuto();
 $autos = $autoControl->buscar("");
 $hay = false;

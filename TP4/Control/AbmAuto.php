@@ -1,6 +1,5 @@
 <?php
-include_once 'C:/XAMPP/htdocs/TUWD/TP4/Modelo/Auto.php';
-include_once 'C:/XAMPP/htdocs/TUWD/TP4/Modelo/Persona.php';
+
 class AbmAuto {
 
      /**

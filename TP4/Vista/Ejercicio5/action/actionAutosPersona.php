@@ -1,7 +1,5 @@
 <?php 
-include_once '../../../Utils/funciones.php';
-include_once '../../../Control/AbmAuto.php';
-include_once '../../../Control/AbmPersona.php';
+require_once '../../../configuracion.php';
 
 $data = darDatosSubmitted(); 
 $param = array('NroDni' => $data['DniDuenio']);   //obtenemos el dni 

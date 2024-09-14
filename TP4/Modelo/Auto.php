@@ -1,8 +1,5 @@
 <?php 
 
-include_once 'C:/XAMPP/htdocs/TUWD/TP4/Modelo/Conector/BaseDatos.php';
-include_once 'C:/XAMPP/htdocs/TUWD/TP4/Control/AbmAuto.php';
-include_once 'C:/XAMPP/htdocs/TUWD/TP4/Control/AbmPersona.php';
 class Auto {
     private $patente;
     private $marca;
