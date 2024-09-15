@@ -14,9 +14,7 @@ if ($_FILES['formFile']["error"] <= 0) {
     } else {
         $error = 0;
     }
-} else {
-    echo "ERROR: no se pudo cargar el archivo. No se pudo acceder al archivo Temporal";
-}
+} 
 ?>
 <!DOCTYPE html>
 <html lang="es">

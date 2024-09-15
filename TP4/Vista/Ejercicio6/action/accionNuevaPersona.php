@@ -1,18 +1,18 @@
-<?php 
+<?php
 require_once '../../../configuracion.php';
 
-$datos = darDatosSubmitted(); 
+$datos = darDatosSubmitted();
 $objPersona = new AbmPersona();
 
 $busca = array('NroDni' => $datos['NroDni']);
-$res = $objPersona->buscar($busca); 
+$res = $objPersona->buscar($busca);
 
-if (count($res)>0){
-    $res = false; 
+if (count($res) > 0) {
+    $res = false;
     $men = "Este DNI ya esta registrado.";
 } else {
     $res = $objPersona->alta($datos);
-    if ($res == true ){
+    if ($res == true) {
         $men = "La persona fue cargada exitosamente.";
     } else {
         $men = "ERROR. No se pudo registrar a la persona. ";
@@ -32,17 +32,12 @@ if (count($res)>0){
 </head>
 
 <body>
-   
-<div id="container" style="margin:50px 30px;">
-
-    <?php
-    
-        echo "<h2>" . $men. "</h2><br>";?>
-</div>
-
-    <a href="../NuevaPersona.php" class="btn btn-primary">Volver</a>
-     <a href="../../../../index.html" class="btn btn-secondary"> Volver al menu principal </a>
-   
+    <div id="container" style="margin:50px 300px;">
+        <?php echo "<h2>" . $men . "</h2><br>"; ?>
+        <hr>
+        <a href="../NuevaPersona.php" class="btn btn-primary">Volver</a>
+        <a href="../../../../index.html" class="btn btn-secondary"> Volver al menu principal </a>
+    </div>
 </body>
 
 </html>

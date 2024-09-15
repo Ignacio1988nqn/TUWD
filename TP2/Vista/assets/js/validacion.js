@@ -9,18 +9,18 @@
 $(function validar(){
     $("#form").validate({
         rules: {
-            username: {
+            usuario: {
                 required:true,
             }, 
             password: {
                 required: true,
                 minlength: 8, 
                 letan: true,
-                notEqual: "#username"
+                notEqual: "#usuario"
             },
         }, 
         messages: {
-            username: {
+            usuario: {
                 required: "Campo requerido",
             },
             password: {

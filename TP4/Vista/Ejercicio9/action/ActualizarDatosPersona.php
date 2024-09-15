@@ -1,23 +1,22 @@
-<?php 
+<?php
 
 require_once '../../../configuracion.php';
 
-$datos = darDatosSubmitted(); 
+$datos = darDatosSubmitted();
 
-$objPersona = new AbmPersona(); 
-$dni = array('NroDni'=>$datos['NroDni']);
+$objPersona = new AbmPersona();
+$dni = array('NroDni' => $datos['NroDni']);
 $res = $objPersona->buscar($dni);
-if (count($res)>0){
+if (count($res) > 0) {
     $persona = $res[0];
-    $nuevosDatos = ['NroDni' => $datos['NroDni'],'Apellido' => $datos['Apellido'] , 'Nombre' => $datos['Nombre'] , 'fechaNac' => $datos['fechaNac'] , 'Telefono'=> $datos['Telefono'] , 'Domicilio' => $datos['Domicilio']];
-    if($objPersona->modificacion($nuevosDatos)){
-        $mensjae ="<h2>Datos cambiados con exito</h2>"; 
+    $nuevosDatos = ['NroDni' => $datos['NroDni'], 'Apellido' => $datos['Apellido'], 'Nombre' => $datos['Nombre'], 'fechaNac' => $datos['fechaNac'], 'Telefono' => $datos['Telefono'], 'Domicilio' => $datos['Domicilio']];
+    if ($objPersona->modificacion($nuevosDatos)) {
+        $mensjae = "<h2>Datos cambiados con exito</h2>";
     } else {
-        $mensjae="<h2>No se modificaron los datos.</h2>"; 
+        $mensjae = "<h2>No se modificaron los datos.</h2>";
     }
 }
-?> 
-
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -32,17 +31,14 @@ if (count($res)>0){
 </head>
 
 <body>
-   
-<div id="container" style="margin:50px 30px;">
+    <div id="container" style="margin:50px 300px;">
 
-    <?php
-    
-        echo  $mensjae;
-    ?>
-    <a href="../BuscarPersona.php" class="btn btn-primary">Volver</a>
-     <a href="../../../../index.html" class="btn btn-secondary"> Volver al menu principal </a>
-   
-</div>
+        <?php echo  $mensjae; ?>
+        <hr>
+        <a href="../BuscarPersona.php" class="btn btn-primary">Volver</a>
+        <a href="../../../../index.html" class="btn btn-secondary"> Volver al menu principal </a>
+
+    </div>
 </body>
 
 </html>
