@@ -1,0 +1,52 @@
+<html> 
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+{% include 'estructura/encabezado.twig' %}
+
+</header>
+<body>
+<div class="container mt-5">
+    <h2>Lista de Libros</h2>
+    <p>{{ mensaje }}</p>
+
+    {% if libros is not empty %}
+        <table class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Año</th>
+                    <th>Editorial</th>
+                    <th>Paginas</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for libro in libros %}
+                    <tr>
+                        <td>{{ libro.Titulo }}</td>
+                        <td>{{ libro.Autor }}</td>
+                        <td>{{ libro.Anio }}</td>
+                        <td>{{ libro.Editorial }} </td>
+                        <td>{{ libro.CantPag }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No se encontraron libros en la base de datos.</p>
+    {% endif %}
+    <div class="mt-4">
+    <button onclick="history.back()" class="btn btn-primary">Volver</button>
+    <a href="../../menu/index.php" class="btn btn-secondary">Volver al menú principal</a>
+</div>
+</div>
+
+<br>
+<br>
+{% include 'estructura/pie.twig' %}
+</body>
+</html>

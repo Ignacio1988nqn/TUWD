@@ -1,0 +1,183 @@
+body {
+    /* background-color: dimgrey; */
+    font-family: 'Varela Round', sans-serif;
+}
+
+.modal-login {
+    top:50px;
+    color: #636363;
+    width: 350px;
+    margin: 30px auto;
+}
+
+.modal-login .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-login .modal-header {
+    border-bottom: none;
+    position: relative;
+    justify-content: center;
+}
+
+.modal-login h4 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.modal-login .form-group {
+    position: relative;
+}
+
+.modal-login i {
+    position: absolute;
+    left: 13px;
+    top: 11px;
+    font-size: 18px;
+}
+
+.modal-login .form-control {
+    padding-left: 40px;
+}
+
+.modal-login .form-control:focus {
+    border-color: #00ce81;
+}
+
+.modal-login .form-control,
+.modal-login .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+
+.modal-login .hint-text {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.modal-login .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.modal-login .btn {
+    background: #00ce81;
+    border: none;
+    line-height: normal;
+}
+
+.modal-login .btn:hover,
+.modal-login .btn:focus {
+    background: #00bf78;
+}
+
+.modal-login .modal-footer {
+    background: #ecf0f1;
+    border-color: #dee4e7;
+    text-align: center;
+    margin: 0 -20px -20px;
+    border-radius: 5px;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.modal-login .modal-footer a {
+    color: #999;
+}
+
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
+
+.message {
+    margin-top: 20px;
+    color: white;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-style{
+    border: 1px solid #000;
+    padding: 50px;
+}
+
+table {
+    border-spacing: 10px; 
+    border-collapse: separate; 
+  }
+  th, td {
+    padding: 5px; 
+  }
+
+
+  input.error {
+    border: 2px solid red;
+}
+
+input.valid {
+    border: 2px solid green;
+}
+
+label.error {
+    color: red;
+    font-size: 12px;
+}
+
+.navbar {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margin */
+    display: flex; /* Para alinearlos en una fila */
+}
+header {
+    background-color: #333; /* Cambia el color de fondo */
+    color: white; /* Cambia el color del texto si es necesario */
+}
+/* Estilo para los elementos de la lista */
+.navbar li {
+    position: relative; /* Para permitir el uso de un dropdown */
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+/* Estilo para los enlaces */
+.navbar a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px 15px; /* Espaciado interno */
+    display: block; /* Para que el área clickeable sea el bloque completo */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+/* Cambia el color del fondo al pasar el ratón */
+.navbar a:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para el dropdown */
+.dropdown {
+    display: none; /* Oculta el dropdown por defecto */
+    position: absolute; /* Posición absoluta para el menú desplegable */
+    background-color: #333; /* Color de fondo del dropdown */
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Muestra el dropdown al pasar el ratón */
+.navbar li:hover .dropdown {
+    display: block; /* Muestra el dropdown */
+}
+
+/* Estilo para los enlaces del dropdown */
+.dropdown a {
+    padding: 10px 15px; /* Espaciado interno */
+    white-space: nowrap; /* Evita que se rompan las líneas */
+}
+
+/* Cambia el color del fondo del dropdown al pasar el ratón */
+.dropdown a:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón en el dropdown */
+}

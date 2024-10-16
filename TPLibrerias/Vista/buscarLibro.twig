@@ -1,0 +1,28 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+{% include 'estructura/encabezado.twig' %}
+
+</header>
+<body> 
+<div class="container mt-5">
+    <h2>Buscar Libro</h2>
+    <form action="./action/actionBuscarLibro.php" method="POST">
+        <div class="mb-3">
+            <label for="Titulo" class="form-label">Título</label>
+            <input type="text" class="form-control" id="Titulo" name="Titulo" required>
+        </div>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+</div>
+<br>
+<br>
+{% include 'estructura/pie.twig' %}
+</body>
+</html>
