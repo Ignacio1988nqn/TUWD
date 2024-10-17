@@ -1,8 +1,4 @@
 <?php 
-include_once 'C:/XAMPP/htdocs/TUWD/TPLibrerias/Modelo/Libro.php';
-include_once 'C:/XAMPP/htdocs/TUWD/TPLibrerias/Modelo/Autor.php';
-include_once 'C:/XAMPP/htdocs/TUWD/TPLibrerias/Modelo/Conector/BaseDatos.php';
-
 class AbmLibro {
     
      /**

@@ -1,7 +1,6 @@
 <?php 
 require_once '../../vendor/autoload.php';
-include_once '../../Utils/funciones.php';
-include_once '../../Control/AbmLibro.php';
+require_once '../../configuracion.php';
 
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;

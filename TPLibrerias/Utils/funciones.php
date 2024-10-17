@@ -27,7 +27,7 @@ function verEstructura($e){
     print_r($e);
     echo "</pre>"; 
 }
-/**
+
 spl_autoload_register(function ($class_name){
     //echo "class ".$class_name ;
     $directorys = array(
@@ -57,8 +57,8 @@ spl_autoload_register(function ($class_name){
         }
     }
     echo "No se encontró la clase " . $class_name . "<br>";
-    
+    */
 
-});*/
+});
 
 ?>

@@ -1,5 +1,4 @@
 <?php 
-include_once 'C:/XAMPP/htdocs/TUWD/TPLibrerias/Control/AbmLibro.php';
 //require_once 'C:/XAMPP/htdocs/TUWD-main/Utils/Librerias/krumo-master/class.krumo.php';
 class AbmAutor {
 
