@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../assets/js/JsJQuery/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/JsJQuery/jquery.validate.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus'></i>
+            <span class="logo_name">TUWD</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="../home/home.php">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name" >HOME</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../home/home.php">HOME</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">TP4</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">TP4 - PHP-MYSQL</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Ejercicio3/VerAutos.php">Ej. 3 - Ver lista de
+                            autos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Ejercicio4/buscarAuto.php">Ej. 4 - Buscar un auto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Ejercicio5/listaPersonas.php">Ej. 5 - Lista de
+                            Personas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Ejercicio6/NuevaPersona.php">Ej. 6 - Agregar una
+                            persona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Ejercicio7/NuevoAuto.php">Ej. 7 - Agregar un auto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Ejercicio8/CambioDuenio.php">Ej. 8 - Modificar
+                            dueño</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Ejercicio9/BuscarPersona.php">Ej. 9 - Actualizar datos
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../../index.html">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name" >Volver</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../../../index.html">Volver</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text"></span>
+        </div>
+        <div class="right-container">
+            <div id="container" style="margin:50px 300px;">
+                {% block contenido %}{% endblock %}
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

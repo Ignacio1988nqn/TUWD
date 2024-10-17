@@ -1,0 +1,18 @@
+{
+    "name": "ignacio/tp4",
+    "autoload": {
+        "psr-4": {
+            "Ignacio\\Tp4\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ignacio1988nqn",
+            "email": "ignacio.araya@est.fi.uncoma.edu.ar"
+        }
+    ],
+    "require": {
+        "kktsvetkov/krumo": "^0.4.4",
+        "twig/twig": "^3.14"
+    }
+}
