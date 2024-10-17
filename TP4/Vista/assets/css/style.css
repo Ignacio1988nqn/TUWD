@@ -323,3 +323,10 @@ body {
     width: calc(100% - 78px);
   }
 }
+
+.krumo-root {
+  margin-left: 100px !important;
+}
+.krumo-title {
+  margin-left: 100px !important;
+}
